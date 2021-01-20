@@ -1,0 +1,19 @@
+.home-container {
+    /* background-color: blue; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main {
+    /* background-color: red; */
+    /* margin: auto 20px auto 20px; */
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
