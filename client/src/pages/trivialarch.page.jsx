@@ -1,23 +1,23 @@
-import "./home.styles.css";
+import "./trivialarch.styles.css";
 
 
-const Home = () => {
+export default function TrivialArch() {
+
+
+
+
     return (
-        <div className="home-container">
-            <div className="home-main">
+        <div className="trivialarch-main">
+            <div className="trivialarch-container">
 
-
-                <h4>Architecture Icons</h4>
+                <h4>TrivialArch</h4>
 
                 <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
 
                 <h5>Coming soon</h5>
 
 
-
             </div>
         </div>
     )
 }
-
-export default Home;
