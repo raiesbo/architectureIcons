@@ -27,10 +27,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: var(--bg-color-main);
     font-family: var(--font-standard);
     color: var(--text-color-main);

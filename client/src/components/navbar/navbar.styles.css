@@ -1,7 +1,7 @@
 .navbar-main {
     /* background-color: red; */
     width: 100%;
-    height: 60px;
+    height: 50px;
     position: fixed;
     top: 0;
     display: flex;
@@ -14,25 +14,19 @@
 
 .navbar-main:hover {
     border-bottom: 1.5px solid var(--text-color-alt);
+    /* color: var(--text-color-alt); */
+}
+
+.navbar-main:hover .logo {
     color: var(--text-color-alt);
 }
 
 .logo {
     font-size: 1.2rem;
     font-weight: 700;
-}
-
-/* .alt-text {
-    opacity: 0;
-    display: inline-block;
-    max-width: 0;
     transition: all 400ms ease-in-out;
 }
 
-.navbar-main:hover .alt-text {
-    opacity: 1;
-    max-width: 10rem;
-} */
 
 @media only screen and (max-width: 900px) {
     .alt-text {
@@ -59,8 +53,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 30px;
+    column-gap: 2rem;
     align-items: center;
+    /* z-index: 1; */
 }
 
 .navbar-container li {
@@ -81,3 +76,76 @@
     color: var(--text-color-alt);
     font-weight: 500;
 }
+
+
+
+
+
+/*//BURGER//*/
+
+.burger-container {
+    display: none;
+    cursor: pointer;
+}
+
+.burger {
+    transition: all 400ms ease-in-out;
+    background-color: var(--text-color-main);
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+
+.navbar-main:hover .burger {
+    background-color: var(--text-color-alt);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .burger-container {
+        display: block;
+    }
+
+    .navbar-container ul {
+        background-color: var(--bg-color-main);
+        position: absolute;
+        right: 0;
+        width: 100vw;
+        height: calc(100vh - 55px);
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    .navbar-container li {
+        opacity: 0;
+    }
+
+    @keyframes navLinksFade {
+        from {
+            opacity: 0;
+            transform: translate(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
+    
+    .toggle1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle2 {
+        opacity: 0;
+    }
+    .toggle3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
