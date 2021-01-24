@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid var(--bg-color-alt);
-    transition: ease-in-out 200ms;
+    transition: all 400ms ease-in-out;
     font-family: var(--font-title);
 }
 
@@ -21,6 +21,27 @@
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+/* .alt-text {
+    opacity: 0;
+    display: inline-block;
+    max-width: 0;
+    transition: all 400ms ease-in-out;
+}
+
+.navbar-main:hover .alt-text {
+    opacity: 1;
+    max-width: 10rem;
+} */
+
+@media only screen and (max-width: 900px) {
+    .alt-text {
+        display: none;
+    }
+}
+
+
+
 
 .navbar-container {
     /* background-color: blue; */
@@ -46,4 +67,17 @@
     list-style: none;
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+
+.strong-text {
+    color: var(--text-color-alt);
+    font-style: italic;
+    /* font-weight: 450; */
+
+}
+
+.strong-text:before {
+    color: var(--text-color-alt);
+    font-weight: 500;
 }
