@@ -9,9 +9,66 @@
 }
 
 .home-main {
+    /* background-color: red; */
     margin: auto 20px auto 20px;
-    max-width: 900px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.quote {
+    color: var(--text-color-alt);
+    font-style: italic;
+    font-size: 1.3rem;
+    transition: ease 200ms;
+    height: 100px;
+    width: 100%;
+    margin: 0 0 auto 0;
+}
+
+.quote-data {
+    margin: 0;
+    /* background-color: blue; */
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.next-quote {
+    margin: 0;
+    font-family: var(--mono);
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-color-main);
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .home-main {
+        width: 90%;
+        text-align: center;
+    }
+
+    .quote {
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .quote-data {
+        width: 100%;
+        flex-direction: column;
+        height: 60px;
+    }
 }

@@ -25,7 +25,7 @@ export default function NavBar() {
 
             <div className="navbar-container">
                 <div className="navbar-icons">
-                    <h4>AI.</h4>
+                    <h4 className="logo">AI.</h4>
                 </div>
 
                 <nav>
