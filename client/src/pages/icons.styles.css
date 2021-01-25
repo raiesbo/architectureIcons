@@ -8,10 +8,14 @@
 
 
 .icons-container {
+    /* background-color: red; */
     margin: auto 20px auto 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
+    width: 900px;
+    height: 75%;
+    /* border: 2px solid white; */
 }
 
