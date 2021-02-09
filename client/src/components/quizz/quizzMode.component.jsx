@@ -1,7 +1,12 @@
+import { useContext } from 'react';
 import "./quizzMode.styles.css"
 import { ACTIONS } from "../store/actions";
+import { Context } from "../store/store.component";
 
-export default function QuizzMode({ dispatch, state }) {
+
+export default function QuizzMode() {
+
+    const [state, dispatch] = useContext(Context);
 
     const images = require.context(`../../assets/img/`, true);
 
@@ -33,7 +38,6 @@ export default function QuizzMode({ dispatch, state }) {
                         <div
                             key={id}
                             className="mode"
-                            // style={{ backgroundImage: `url("../../assets/img/${item.img}")` }}
                             style={{ backgroundImage: `url("${modeImage}")` }}
                             onClick={() => dispatch({ type: ACTIONS.ADD_QUIZZMODE, payload: { mode: item.mode } })}
                         >

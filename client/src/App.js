@@ -40,19 +40,19 @@ export default function App() {
     <div className="App">
       <NavBar menuStrong={menuStrong} />
 
-      <Switch>
-
-        <Store >
+      <Store>
+        <Switch>
 
           <Route path="/icons/:architect" component={Icons} />
           <Route path="/icons" component={Icons} />
           <Route path="/trivialArch" component={TrivialArch} />
           <Route path="/contact" component={Contact} />
           <Route path="/*" component={Home} />
-          
-        </Store>
 
-      </Switch>
+
+
+        </Switch>
+      </Store>
 
       <Footer />
     </div>

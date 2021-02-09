@@ -1,0 +1,113 @@
+.question-container {
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-areas: 
+    "numQ topic correct wrong time"
+    "form form form form form"
+    "form form form form form"
+    "form form form form form"
+    "form form form form form"
+    "form form form form form"
+    "progressb progressb progressb progressb progressb";
+    width: 900px;
+    justify-content: space-between;
+}
+
+/* "question question question question question"
+    "input1 answer1 answer1 answer1 answer1"
+    "input2 answer2 answer2 answer2 answer2"
+    "input3 answer3 answer3 answer3 answer3"
+    "input4 answer4 answer4 answer4 answer4"
+    "progressb progressb progressb progressb progressb"; */
+
+
+
+.question-container form {
+    grid-area: form;
+
+    /* background-color: blue; */
+    display: grid;
+    grid-template-areas: 
+    "question question question question question"
+    "input1 answer1 answer1 answer1 answer1"
+    "input2 answer2 answer2 answer2 answer2"
+    "input3 answer3 answer3 answer3 answer3"
+    "input4 answer4 answer4 answer4 answer4"
+    "button button button button button";
+    
+}
+
+.topic {
+    grid-area: topic;
+}
+
+.question-num {
+    grid-area: numQ;
+}
+
+.correct {
+    grid-area: correct;
+}
+
+.incorrect {
+    grid-area: wrong;
+}
+
+
+
+
+form .input1 {
+    grid-area: input1;
+}
+
+form .answer1 {
+    grid-area: answer1;
+}
+
+
+form .input2 {
+    grid-area: input2;
+}
+
+form .answer2 {
+    grid-area: answer2;
+}
+
+
+form .input3 {
+    grid-area: input3;
+}
+
+form .answer3 {
+    grid-area: answer3;
+}
+
+
+form .input4 {
+    grid-area: input4;
+}
+
+form .answer4 {
+    grid-area: answer4;
+}
+
+.button {
+    grid-area: button;
+}
+
+
+/* .question-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+} */
+
+/* .question-container form label {
+    display: inline;
+} */
+
