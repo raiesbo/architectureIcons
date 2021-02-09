@@ -1,88 +1,69 @@
-import React, { useState, useEffect, useReducer } from "react"
+import React, { useState, useEffect, useReducer, createContext, useContext } from "react"
 import "./trivialarch.styles.css";
 import QuizzMode from "../components/quizz/quizzMode.component";
 import Rules from "../components/quizz/rules.component";
 import Question from "../components/quizz/question.component";
 
-const questions = require("../assets/questions.asset.json");
 
-export const ACTIONS = {
-    ADD_USERNAME: "ADD_USERNAME",
-    RESTORE_USERNAME: "RESTORE_USERNAME",
-    ADD_QUIZZMODE: "ADD_QUIZZMODE",
-    ADD_QUESTIONS: "ADD_QUESTIONS",
-    ADD_ANSWER: "ADD_ANSWER",
-    RESTORE_GAME: "RESTORE_GAME"
-}
+// REDUX HOOKS
+import { Context } from "../components/store/store.component";
+// import { Reducer } from "../components/quizz/reducer";
+// import { ACTIONS } from "../components/quizz/store/actions";
 
-const reducer = (state, action) => {
-    switch (state.type) {
-        case ACTIONS.ADD_USERNAME:
-            console.log(action.payload)
-            return { ...state, username: action.payload.username };
-        case ACTIONS.RESTORE_USERNAME:
-            console.log(action.payload)
-            return { ...state, username: "" };
-        case ACTIONS.ADD_QUIZZMODE:
-            console.log(action.payload)
-            return { ...state, quizzMode: action.payload.mode };
-        case ACTIONS.ADD_QUESTIONS:
-            return { ...state, questionsList: action.payload.questions };
-        case ACTIONS.ADD_ANSWER:
-            return state;
-        case ACTIONS.RESTORE_GAME:
-            console.log("game restored")
-            return { ...state, quizzMode: "", isReady: false, questionsList: [], answers: { total: 0, right: 0, wrong: 0 } };
-        default:
-            return state;
-    }
-}
 
-const initialState = {
-    username: "",
-    quizzMode: "",
-    isReady: false,
-    questionsList: [],
-    answers: {
-        total: 0,
-        right: 0,
-        wrong: 0
-    }
-}
+// const questions = require("../assets/questions.asset.json");
 
+
+// const initialState = {
+//     username: "",
+//     quizzMode: "",
+//     isReady: false,
+//     questionsList: [],
+//     answers: {
+//         total: 0,
+//         right: 0,
+//         wrong: 0
+//     }
+// }
+
+
+// export const Context = createContext(initialState);
 
 export default function TrivialArch() {
 
-    const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useContext(Context);
 
-    console.log("State: ", state)
+    // useEffect(() => {
 
-    useEffect(() => {
+    //     const sortedQuestions = [];
+    //     const sortedReducedQuestions = [];
+    //     const randomIndex = [];
 
-        const sortedQuestions = [];
-        const randomIndex = [];
+    //     if (state.quizzMode === "") {
+    //         dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: [] } })
+    //     } else {
+    //         for (let question of questions) {
+    //             if (question.tags.includes(state.quizzMode)) {
+    //                 sortedQuestions.push(question)
+    //             }
+    //         }
 
-        if (state.quizzMode === "") {
-            dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: [] } })
-        } else {
-            for (let question of questions) {
-                if (question.tags.includes(state.quizzMode)) {
-                    sortedQuestions.push(question)
-                }
-            }
+    //         while (randomIndex.length < 10) {
+    //             const randomNum = Math.ceil(Math.random() * sortedQuestions.length);
+    //             if (!randomIndex.includes(randomNum)) {
+    //                 randomIndex.push(randomNum)
+    //             }
+    //         }
 
-            while (randomIndex.length <= 10) {
-                const randomNum = Math.floor(Math.random() * sortedQuestions.length);
-                if (randomIndex.includes(randomNum)) {
-                    randomIndex.push(randomNum)
-                }
-            }
+    //         for (let index of randomIndex) {
+    //             sortedReducedQuestions.push(sortedQuestions[index - 1])
+    //         }
 
-            console.log("sorted questions: ", sortedQuestions)
-            dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: sortedQuestions } })
-        }
+    //         console.log("sorted questions: ", sortedReducedQuestions)
+    //         dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: sortedReducedQuestions } })
+    //     }
 
-    }, [state.quizzMode])
+    // }, [state.quizzMode])
 
 
     return (
@@ -90,9 +71,15 @@ export default function TrivialArch() {
             <div className="trivialarch-container">
 
 
-                {state.quizzMode === "" && <QuizzMode dispatch={dispatch} state={state}/>}
-                {!state.isReady && state.quizzMode !== "" ? <Rules dispatch={dispatch} /> : null}
-                {state.isReady && state.quizzMode !== "" ? <Question dispatch={dispatch} /> : null}
+
+                    {/* {state.quizzMode === "" && <QuizzMode dispatch={dispatch} />}
+                    {!state.isReady && state.quizzMode !== "" ? <Rules dispatch={dispatch} /> : null}
+                    {state.isReady && state.quizzMode !== "" ? <Question dispatch={dispatch} /> : null} */}
+                    {/* <Rules /> */}
+                    {!state.isReady && <Rules />}
+                    {/* <Question /> */}
+
+
 
 
             </div>

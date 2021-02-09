@@ -1,5 +1,5 @@
 import "./quizzMode.styles.css"
-import { ACTIONS } from "../../pages/trivialarch.page";
+import { ACTIONS } from "../store/actions";
 
 export default function QuizzMode({ dispatch, state }) {
 
@@ -35,11 +35,7 @@ export default function QuizzMode({ dispatch, state }) {
                             className="mode"
                             // style={{ backgroundImage: `url("../../assets/img/${item.img}")` }}
                             style={{ backgroundImage: `url("${modeImage}")` }}
-                            onClick={() => {
-                                console.log(ACTIONS.ADD_QUIZZMODE, item.mode)
-                                console.log(state)
-                                return dispatch({ type: ACTIONS.ADD_QUIZZMODE, payload: { mode: item.mode } })
-                            }}
+                            onClick={() => dispatch({ type: ACTIONS.ADD_QUIZZMODE, payload: { mode: item.mode } })}
                         >
                             <h2>{item.title}</h2>
                         </div>

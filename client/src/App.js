@@ -6,6 +6,7 @@ import Home from "./pages/home.page";
 import Icons from "./pages/icons.page";
 import TrivialArch from "./pages/trivialarch.page";
 import Contact from "./pages/contact.page";
+import Store from "./components/store/store.component";
 import { Switch, Route, useLocation } from 'react-router-dom';
 
 
@@ -33,18 +34,24 @@ export default function App() {
 
   useEffect(() => {
     menuStrongHandler()
-  }, [location]) 
+  }, [location])
 
   return (
     <div className="App">
       <NavBar menuStrong={menuStrong} />
 
       <Switch>
-        <Route path="/icons/:architect" component={Icons} />
-        <Route path="/icons" component={Icons} />
-        <Route path="/trivialArch" component={TrivialArch} />
-        <Route path="/contact" component={Contact} />
-        <Route path="/*" component={Home} />
+
+        <Store >
+
+          <Route path="/icons/:architect" component={Icons} />
+          <Route path="/icons" component={Icons} />
+          <Route path="/trivialArch" component={TrivialArch} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/*" component={Home} />
+          
+        </Store>
+
       </Switch>
 
       <Footer />

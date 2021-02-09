@@ -1,11 +1,13 @@
+import { ACTIONS } from "../store/actions";
 
 
 
-export default function Question() {
+export default function Question({ dispatch }) {
 
-    return(
+    return (
         <div className="question-container">
 
+            <h2>Question</h2>
 
         </div>
     )
