@@ -1,0 +1,46 @@
+.quizzMode-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+    height: 100%;
+    /* width: 100%; */
+}
+
+.mode {
+    width: 20rem;
+    height: 12rem;
+    border: 3px solid white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* filter: grayscale(100%); */
+
+    /* transition: ease 500ms; */
+    
+}
+
+.mode:hover {
+    background-size: 110%;
+    animation: zoomIn 350ms;
+}
+
+.mode h2 {
+    /* font-family: var(--font-title);
+    color: white; */
+}
+
+@keyframes zoomIn {
+    from{
+        background-size: 100%;
+    }
+    to{
+        background-size: 110%;
+    }
+}

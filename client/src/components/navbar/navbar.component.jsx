@@ -48,7 +48,7 @@ export default function NavBar({ menuStrong }) {
                                     style={hidden ? { animation: `navLinksFade 0.5s ease forwards ${id / menuItems.length + 0.4}s` } : null}
                                     onClick={handleNav}
                                 >
-                                    <Link to={item.url} className={menuStrong === item.name && "strong-text"}>
+                                    <Link to={item.url} className={menuStrong === item.name ? "strong-text" : undefined}>
                                         {item.name}
                                     </Link>
                                 </li>
