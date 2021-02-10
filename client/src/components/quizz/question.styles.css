@@ -1,11 +1,11 @@
 .question-container {
     border: 3px solid white;
     border-radius: 8px;
-    padding: 10px;
+    padding: 15px;
 
     display: grid;
     grid-template-areas: 
-    "numQ topic correct wrong time"
+    "numQ topic correct wrong timer"
     "form form form form form"
     "form form form form form"
     "form form form form form"
@@ -13,31 +13,8 @@
     "form form form form form"
     "progressb progressb progressb progressb progressb";
     width: 900px;
+    align-items: center;
     justify-content: space-between;
-}
-
-/* "question question question question question"
-    "input1 answer1 answer1 answer1 answer1"
-    "input2 answer2 answer2 answer2 answer2"
-    "input3 answer3 answer3 answer3 answer3"
-    "input4 answer4 answer4 answer4 answer4"
-    "progressb progressb progressb progressb progressb"; */
-
-
-
-.question-container form {
-    grid-area: form;
-
-    /* background-color: blue; */
-    display: grid;
-    grid-template-areas: 
-    "question question question question question"
-    "input1 answer1 answer1 answer1 answer1"
-    "input2 answer2 answer2 answer2 answer2"
-    "input3 answer3 answer3 answer3 answer3"
-    "input4 answer4 answer4 answer4 answer4"
-    "button button button button button";
-    
 }
 
 .topic {
@@ -56,8 +33,41 @@
     grid-area: wrong;
 }
 
+.timer {
+    grid-area: timer;
+}
 
 
+.question-container form {
+    grid-area: form;
+
+    border-top: 3px solid white;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-areas: 
+    "question question"
+    "input1 answer1"
+    "input2 answer2"
+    "input3 answer3"
+    "input4 answer4"
+    "button button";
+    width: 100%;
+    /* grid-column: 10px 100px; */
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    justify-content: left;
+    /* align-items: center; */
+    margin-top: 10px; 
+}
+
+
+
+
+
+.question {
+    grid-area: question;
+    margin: 10px 0 10px 0;
+}
 
 form .input1 {
     grid-area: input1;
@@ -94,20 +104,27 @@ form .answer4 {
     grid-area: answer4;
 }
 
-.button {
+.button{
     grid-area: button;
+    margin: 20px 0 0 0;
+    padding: 6px;
+    border-radius: 4px;
+    border: 2px solid white;
+    transition: ease 150ms;
+    cursor: pointer;
+    font-family: var(--font-title);
+    color: var(--text-color-main);
+    font-weight: 700;
 }
 
+.button:hover{
+    background-color: white;
+}
 
-/* .question-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-} */
+form {
+    color: black;
+}
 
-/* .question-container form label {
-    display: inline;
-} */
-
+input[type='radio'] {
+    margin: 10px 0 10px 0;
+}

@@ -18,7 +18,13 @@ export const Reducer = (state, action) => {
         case ACTIONS.ADD_QUESTIONS:
             return { ...state, questionsList: action.payload.questions };
         case ACTIONS.ADD_ANSWER:
-            return { ...state, answers: { total: state.answers.total + 1, right: state.answers.total + action.payload.right, wrong: action.payload.wrong } };
+            return {
+                ...state, answers: {
+                    total: state.answers.total + 1,
+                    right: state.answers.right + action.payload.right,
+                    wrong: state.answers.wrong + action.payload.wrong
+                }
+            };
         case ACTIONS.RESTORE_GAME:
             console.log("game restored")
             return { ...state, quizzMode: "", isReady: false, questionsList: [], answers: { total: 0, right: 0, wrong: 0 } };

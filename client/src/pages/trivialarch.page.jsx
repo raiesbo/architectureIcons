@@ -50,6 +50,11 @@ export default function TrivialArch() {
 
     }, [state.quizzMode])
 
+    const handleCancel = e => {
+        e.preventDefault();
+        dispatch({ type: ACTIONS.RESTORE_GAME })
+    }
+
 
     return (
         <div className="trivialarch-main">
@@ -58,13 +63,13 @@ export default function TrivialArch() {
 
 
                 {state.quizzMode === "" && <QuizzMode dispatch={dispatch} />}
-                    {!state.isReady && state.quizzMode !== "" ? <Rules dispatch={dispatch} /> : null}
-                    {state.isReady && state.quizzMode !== "" ? <Question dispatch={dispatch} /> : null}
+                {!state.isReady && state.quizzMode !== "" ? <Rules dispatch={dispatch} /> : null}
+                {state.isReady && state.quizzMode !== "" ? <Question dispatch={dispatch} /> : null}
                 {/* <Rules /> */}
                 {/* <Question /> */}
 
 
-
+                {state.quizzMode !== "" && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
 
             </div>
         </div>

@@ -14,3 +14,26 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.cancel-btn{
+    /* background-color: transparent; */
+    position: absolute;
+    bottom: 10%;
+    /* margin-top: 100px; */
+    width: 125px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 2px solid white;
+    transition: ease 200ms;
+    cursor: pointer;
+    font-family: var(--font-title);
+    color: var(--text-color-main);
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.cancel-btn:hover{
+    /* background-color: var(--shadow-color); */
+    /* color: black; */
+    opacity: 1;
+}
