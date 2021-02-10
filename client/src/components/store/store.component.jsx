@@ -7,6 +7,8 @@ import { Reducer } from "./reducer";
 
 
 const initialState = {
+    url: "http://localhost:5000/",
+    // url: "",
     username: "",
     quizzMode: "",
     isReady: false,

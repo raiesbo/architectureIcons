@@ -1,0 +1,29 @@
+.ranking-container {
+    border: 3px solid white;
+    /* background-color: white; */
+    border-radius: 8px;
+    width: 20rem;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ranking-container .section-title {
+    margin-bottom: 10px;
+    color: var(--text-color-alt);
+}
+
+.ranking-container table {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 3px solid white;
+    text-align: center;
+}
+
+.ranking-container th {
+    color: var(--text-color-alt);
+}

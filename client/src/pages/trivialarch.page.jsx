@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useReducer, createContext, useContext } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import "./trivialarch.styles.css";
 import QuizzMode from "../components/quizz/quizzMode.component";
 import Rules from "../components/quizz/rules.component";
 import Question from "../components/quizz/question.component";
 import Score from "../components/quizz/score.component";
+import Ranking from "../components/quizz/ranking.component";
 
 
 // REDUX HOOKS
@@ -18,6 +19,7 @@ const questions = require("../assets/questions.asset.json");
 export default function TrivialArch() {
 
     const [state, dispatch] = useContext(Context);
+    const [showRanking, setShowRanking] = useState(false);
 
     useEffect(() => {
 
@@ -56,22 +58,46 @@ export default function TrivialArch() {
         dispatch({ type: ACTIONS.RESTORE_GAME })
     }
 
+    const handleRanking = () => {
+        setShowRanking(!showRanking)
+    }
+
+
+    const quizzDisplay = () => {
+
+        if (!showRanking) {
+            return <Ranking />
+        } else if (state.quizzMode === "") {
+            return <QuizzMode />
+        } else if (!state.isReady && state.quizzMode !== "") {
+            return <Rules />
+        } else if (state.isReady && state.quizzMode !== "" && !state.isFinished) {
+            return <Question />
+        } else if (state.isFinished) {
+            return <Score />
+        } else {
+            return ""
+        }
+
+    }
+
 
     return (
         <div className="trivialarch-main">
             <div className="trivialarch-container">
 
 
+                {quizzDisplay()}
 
-                {state.quizzMode === "" && <QuizzMode />}
-                {!state.isReady && state.quizzMode !== "" && <Rules  /> }
-                {state.isReady && state.quizzMode !== "" && !state.isFinished && <Question  /> }
-                {state.isFinished && <Score  /> }
+                {/* <QuizzMode /> */}
                 {/* <Rules /> */}
                 {/* <Question /> */}
+                {/* <Score /> */}
+                {/* <Ranking /> */}
 
 
                 {state.quizzMode !== "" && !state.isFinished && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
+                {state.quizzMode === "" && <button onClick={handleRanking} className="cancel-btn">{showRanking ? "Ranking" : "Menu"}</button>}
 
             </div>
         </div>

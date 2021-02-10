@@ -12,6 +12,10 @@ const UserSchema = new mongoose.Schema({
     date: {
         type: Date,
         default: new Date()
+    },
+    quizzMode: {
+        type: String,
+        required: true
     }
 })
 

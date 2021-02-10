@@ -16,10 +16,10 @@ module.exports.champion_get = async (req, res) => {
 
 module.exports.champion_post = async (req, res) => {
     console.log(req.body)
-    const { username, score } = req.body;
+    const { username, score, quizzMode } = req.body;
 
     try {
-        const user = await User.create({ username, score })
+        const user = await User.create({ username, score, quizzMode })
         res.status(200).json(user)
     }
     catch (err) {

@@ -9,10 +9,31 @@ export default function Score() {
     const [state, dispatch] = useContext(Context);
     const [name, setName] = useState("")
 
-    const handleCancel = e => {
+    const handleCancel = async (e) => {
         e.preventDefault();
-        if (name !== "" ) {
-            dispatch({ type: ACTIONS.ADD_USERNAME, payload: { username: name } })
+        if (name !== "") {
+            // dispatch({ type: ACTIONS.ADD_USERNAME, payload: { username: name } })
+
+            try {
+                const res = await fetch(`${state.url}champion`, {
+                    method: "POST",
+                    body: JSON.stringify({
+                        username: name,
+                        score: state.answers.right,
+                        quizzMode: state.quizzMode
+                    }),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
+
+                const user = res.json();
+                console.log(user)
+            }
+            catch (e) {
+                console.log(e)
+            }
+
         }
         dispatch({ type: ACTIONS.RESTORE_GAME })
     }
