@@ -65,7 +65,7 @@ export default function TrivialArch() {
 
     const quizzDisplay = () => {
 
-        if (!showRanking) {
+        if (showRanking) {
             return <Ranking />
         } else if (state.quizzMode === "") {
             return <QuizzMode />
@@ -97,7 +97,7 @@ export default function TrivialArch() {
 
 
                 {state.quizzMode !== "" && !state.isFinished && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
-                {state.quizzMode === "" && <button onClick={handleRanking} className="cancel-btn">{showRanking ? "Ranking" : "Menu"}</button>}
+                {state.quizzMode === "" && <button onClick={handleRanking} className="cancel-btn">{!showRanking ? "Ranking" : "Menu"}</button>}
 
             </div>
         </div>

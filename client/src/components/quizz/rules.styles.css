@@ -1,23 +1,41 @@
 .rules-container {
 
-    width: 600px;
-    height: 300px;
+    /* width: 600px; */
+    /* height: 300px; */
     border-radius: 8px;
     border: 3px solid white;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    /* text-align: center; */
+
+    padding: 15px;
+}
+
+.rules-title {
+    color: var(--text-color-alt);
+    border-bottom: 3px solid white;
+    width: 100%;
+    padding: 0 0 10px 0;
+
+    text-align: center;
+}
+
+.rules-container ul {
+    margin: 30px 10px 10px 10px;
 }
 
 .rules-container li{
-    /* color: black; */
+    color: var(--text-color-alt);
     font-size: 0.9rem;
+    margin: 10px;
 }
 
 .rules-container button{
-    width: 50%;
+    margin-top: 30px;
+    width: 100%;
     padding: 6px;
     border-radius: 4px;
     border: 2px solid white;

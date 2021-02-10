@@ -22,25 +22,33 @@
     background-size: cover;
     /* filter: grayscale(100%); */
 
-    /* transition: ease 500ms; */
+    transition: ease 200ms;
     
 }
 
 .mode:hover {
-    background-size: 110%;
-    animation: zoomIn 350ms;
+    background-size: 107%;
+    animation: zoomIn 300ms;
+    border: 3px solid var(--text-color-alt);
+}
+
+.mode:hover h2 {
+    color: var(--text-color-alt);
 }
 
 .mode h2 {
-    /* font-family: var(--font-title);
-    color: white; */
+    font-family: var(--font-title);
+    /* color: var(--text-color-alt); */
 }
+
+
+
 
 @keyframes zoomIn {
     from{
         background-size: 100%;
     }
     to{
-        background-size: 110%;
+        background-size: 107%;
     }
 }

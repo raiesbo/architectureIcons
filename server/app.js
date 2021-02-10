@@ -15,12 +15,13 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 
 const corsOptions = {
-    origin: "https://architectureicons.com"
+    origin: "https://architectureicons.com",
+    optionsSuccessStatus: 200
 }
 
 
 app.use(express.json()); // body-parser from express
-app.use(cors())
+app.use(cors());
 app.use(userRoutes);
 
 app.get('/', (req, res) => res.send("architectureIcons server"));

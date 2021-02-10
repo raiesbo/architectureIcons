@@ -9,7 +9,7 @@ export default function Rules() {
 
     return (
         <div className="rules-container">
-            <h2>Hi{state.username}, read carefully and lets go!</h2>
+            <h3 className="rules-title">Hi{state.username}, read carefully and lets go!</h3>
 
             <div className="rules-list">
                 <ul>
