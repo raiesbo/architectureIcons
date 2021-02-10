@@ -26,11 +26,11 @@
         "question": "For which three pharaohs the great pyramids of egypt are built?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Khufu, Tutankhamun and Hatshepsut",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Tutankhamun, Ramses II and Menkaure",
                 "isCorrect": false
             },
             {
@@ -38,7 +38,7 @@
                 "isCorrect": true
             },
             {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "Ramses II, Hatshepsut and Menkaure",
                 "isCorrect": false
             }
         ],
@@ -46,27 +46,50 @@
         "date": "2021-02-09"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "When began the construction of the Parthenon?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "480 BC",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "488 BC",
+                "isCorrect": false
+            },
+            {
+                "answer": "432 BC",
+                "isCorrect": false
+            },
+            {
+                "answer": "447 BC",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-10"
+    },
+    {
+        "question": "When began the construction of the roman Colosseum?",
+        "answers": [
+            {
+                "answer": "69–79 AD",
                 "isCorrect": true
             },
             {
-                "answer": "Leon Battista Alberti",
+                "answer": "78–81 AD",
                 "isCorrect": false
             },
             {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "55–63 AD",
+                "isCorrect": false
+            },
+            {
+                "answer": "2021",
                 "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "roman"],
+        "date": "2021-02-10"
     },
     {
         "question": "Who wrotte the first known book in architecture?",
@@ -89,30 +112,7 @@
             }
         ],
         "tags": ["history", "general"],
-        "date": "2021-02-09"
-    },
-    {
-        "question": "Who wrotte the first known book in architecture?",
-        "answers": [
-            {
-                "answer": "Leonardo da Vinci",
-                "isCorrect": false
-            },
-            {
-                "answer": "Marcus Vitruvius Pollio",
-                "isCorrect": true
-            },
-            {
-                "answer": "Leon Battista Alberti",
-                "isCorrect": false
-            },
-            {
-                "answer": "Fra Giovanni Giocondo",
-                "isCorrect": false
-            }
-        ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "date": "2021-02-10"
     },
     {
         "question": "Who wrotte the first known book in architecture?",

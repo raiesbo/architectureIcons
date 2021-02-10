@@ -10,6 +10,7 @@ const initialState = {
     username: "",
     quizzMode: "",
     isReady: false,
+    isFinished: false,
     questionsList: [],
     answers: {
         total: 0,

@@ -26,9 +26,9 @@ export default function Question() {
         if (state.answers.total === state.questionsList.length - 1) {
 
             // congratulations and score
-
-
-            dispatch({ type: ACTIONS.RESTORE_GAME })
+            console.log(1, state)
+            dispatch({ type: ACTIONS.TOGGLE_ISFINISHED })
+            console.log(2, state)
         }
     }
 
@@ -102,7 +102,7 @@ export default function Question() {
             <h4 className="incorrect">Incorrect: {state.answers.wrong}</h4>
             <h4 className="timer">Time:
                 <span
-                    style={{ color: seconds >= 15 ? "green" : "red" }}
+                    style={{ color: seconds >= 10 ? "green" : "red" }}
                 >{seconds}</span>
             </h4>
 

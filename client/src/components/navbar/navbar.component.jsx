@@ -11,10 +11,10 @@ export default function NavBar({ menuStrong }) {
             name: 'Home',
             url: '/'
         },
-        {
-            name: 'Icons',
-            url: '/icons'
-        },
+        // {
+        //     name: 'Icons',
+        //     url: '/icons'
+        // },
         {
             name: 'TrivialArch',
             url: '/trivialArch'

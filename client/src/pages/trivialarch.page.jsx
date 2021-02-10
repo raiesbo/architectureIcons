@@ -3,6 +3,7 @@ import "./trivialarch.styles.css";
 import QuizzMode from "../components/quizz/quizzMode.component";
 import Rules from "../components/quizz/rules.component";
 import Question from "../components/quizz/question.component";
+import Score from "../components/quizz/score.component";
 
 
 // REDUX HOOKS
@@ -62,14 +63,15 @@ export default function TrivialArch() {
 
 
 
-                {state.quizzMode === "" && <QuizzMode dispatch={dispatch} />}
-                {!state.isReady && state.quizzMode !== "" ? <Rules dispatch={dispatch} /> : null}
-                {state.isReady && state.quizzMode !== "" ? <Question dispatch={dispatch} /> : null}
+                {state.quizzMode === "" && <QuizzMode />}
+                {!state.isReady && state.quizzMode !== "" && <Rules  /> }
+                {state.isReady && state.quizzMode !== "" && !state.isFinished && <Question  /> }
+                {state.isFinished && <Score  /> }
                 {/* <Rules /> */}
                 {/* <Question /> */}
 
 
-                {state.quizzMode !== "" && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
+                {state.quizzMode !== "" && !state.isFinished && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
 
             </div>
         </div>
