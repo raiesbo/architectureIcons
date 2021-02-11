@@ -1,15 +1,17 @@
 .quizzMode-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
     justify-content: space-between;
-    width: 1000px;
-    height: 100%;
-    /* width: 100%; */
+    align-items: center;
+    max-width: 1000px;
+    width: calc(100% - 20px);
 }
 
 .mode {
-    width: 20rem;
-    height: 12rem;
+
+    height: 200px;
+    margin: 0 10px;
+
     border: 3px solid white;
     border-radius: 8px;
     display: flex;
@@ -20,9 +22,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* filter: grayscale(100%); */
-
-    transition: ease 200ms;
     
 }
 
@@ -42,6 +41,24 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+    .quizzMode-container {
+
+        max-width: calc(100% - 20px);
+        width: 100%;
+    }
+
+    .mode {
+        /* width: 100%; */
+        /* background-color: red; */
+        height: 200px;
+        /* justify-self: center; */
+        margin: 0 0 15px 0;
+    }
+}
+
+
+
 
 
 @keyframes zoomIn {
@@ -52,3 +69,4 @@
         background-size: 107%;
     }
 }
+

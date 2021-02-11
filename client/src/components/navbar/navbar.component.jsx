@@ -35,7 +35,7 @@ export default function NavBar({ menuStrong }) {
 
             <nav className="navbar-container">
                 <div className="navbar-icons">
-                    <h4 className="logo">A<span className="alt-text">rchitecture </span>I<span className="alt-text">cons</span>.</h4>
+                    <a href="/"><h4 className="logo">A<span className="alt-text">rchitecture </span>I<span className="alt-text">cons</span>.</h4></a>
                 </div>
 
 
