@@ -19,7 +19,7 @@ export default function Score() {
                     method: "POST",
                     body: JSON.stringify({
                         username: name,
-                        score: state.answers.right,
+                        score: state.answers.right * 4,
                         quizzMode: state.quizzMode
                     }),
                     headers: {
@@ -44,7 +44,7 @@ export default function Score() {
         <div className="score-container" >
 
             <h3>Congratulations!</h3>
-            <h4>you completed the challenge with a score of: <span>{state.answers.right}</span>!</h4>
+            <h4>you completed the challenge with a score of: <span>{state.answers.right * 4}</span> points!</h4>
             <div className="username-form">
                 <label htmlFor="username">Username:</label>
                 <input id="username" type="text" value={name} onChange={e => setName(e.target.value)} />

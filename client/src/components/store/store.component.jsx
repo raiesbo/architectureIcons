@@ -8,7 +8,7 @@ import { Reducer } from "./reducer";
 
 const initialState = {
     url: "http://localhost:5000/",
-    // url: "https://architectureicons-server.herokuapp.com/",
+    // url: "https://archicons-server.herokuapp.com/",
     username: "",
     quizzMode: "",
     isReady: false,

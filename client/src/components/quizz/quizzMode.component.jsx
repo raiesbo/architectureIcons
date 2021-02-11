@@ -24,7 +24,7 @@ export default function QuizzMode() {
         {
             title: "General",
             img: "general_v3.jpg",
-            mode: "history"
+            mode: "general"
         }
     ]
 

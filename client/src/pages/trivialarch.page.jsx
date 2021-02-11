@@ -36,7 +36,7 @@ export default function TrivialArch() {
                 }
             }
 
-            while (randomIndex.length < 10) {
+            while (randomIndex.length < 20) {
                 const randomNum = Math.ceil(Math.random() * sortedQuestions.length);
                 if (!randomIndex.includes(randomNum)) {
                     randomIndex.push(randomNum)

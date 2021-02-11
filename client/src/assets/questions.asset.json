@@ -1,6 +1,6 @@
 [
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "Who wrote the first known book on architecture?",
         "answers": [
             {
                 "answer": "Leonardo da Vinci",
@@ -92,187 +92,371 @@
         "date": "2021-02-10"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "What civilization built the Temple of Luxor?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Mesopotamian civilization",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Roman civilization",
+                "isCorrect": false
+            },
+            {
+                "answer": "Egyptian civilization",
                 "isCorrect": true
             },
             {
-                "answer": "Leon Battista Alberti",
-                "isCorrect": false
-            },
-            {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "Greek civilization",
                 "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-10"
+        "tags": ["history", "general", "egipt"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "What is the main function of the Egyptian mastaba?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Temples",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Gardens",
+                "isCorrect": false
+            },
+            {
+                "answer": "Fortresses",
+                "isCorrect": false
+            },
+            {
+                "answer": "Burial tombs",
                 "isCorrect": true
-            },
-            {
-                "answer": "Leon Battista Alberti",
-                "isCorrect": false
-            },
-            {
-                "answer": "Fra Giovanni Giocondo",
-                "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "egipt"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "What did the Greeks call 'stoa'?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Temples with a single line of columns arranged all around",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Covered walkway or colonnade designed for public use",
                 "isCorrect": true
             },
             {
-                "answer": "Leon Battista Alberti",
+                "answer": "Open-air structure used for dramatic performance",
                 "isCorrect": false
             },
             {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "Temple is a temple that has columns only at the front",
                 "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "What two parts or areas make up the Greek theater?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "'Skene' and 'Stoa'",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "'Archon' and 'Gynaikeion'",
+                "isCorrect": false
+            },
+            {
+                "answer": "'Gymnós' and 'Orchestra'",
+                "isCorrect": false
+            },
+            {
+                "answer": "'Orchestra' and 'Skene'",
                 "isCorrect": true
-            },
-            {
-                "answer": "Leon Battista Alberti",
-                "isCorrect": false
-            },
-            {
-                "answer": "Fra Giovanni Giocondo",
-                "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "What are the three main orders of Greek architecture?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Doric, Athenian and Parthenian",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Corinthian, Parthenian and Doric",
+                "isCorrect": false
+            },
+            {
+                "answer": "Doric, Ionic and Corinthian",
                 "isCorrect": true
             },
             {
-                "answer": "Leon Battista Alberti",
-                "isCorrect": false
-            },
-            {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "Ionic, Corinthian and Athenian",
                 "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "in which city is the Parthenon located",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Rome",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Athens",
                 "isCorrect": true
             },
             {
-                "answer": "Leon Battista Alberti",
+                "answer": "Granada",
                 "isCorrect": false
             },
             {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "Paris",
                 "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "In what period did the decline of the Greek temples begin?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "Classical Period",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Macedonian Period",
+                "isCorrect": false
+            },
+            {
+                "answer": "Archaic Period",
+                "isCorrect": false
+            },
+            {
+                "answer": "Hellenistic period",
                 "isCorrect": true
-            },
-            {
-                "answer": "Leon Battista Alberti",
-                "isCorrect": false
-            },
-            {
-                "answer": "Fra Giovanni Giocondo",
-                "isCorrect": false
             }
         ],
-        "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-11"
     },
     {
-        "question": "Who wrotte the first known book in architecture?",
+        "question": "What did the Romans call 'opus caementicium'?",
         "answers": [
             {
-                "answer": "Leonardo da Vinci",
+                "answer": "A metal alloy",
                 "isCorrect": false
             },
             {
-                "answer": "Marcus Vitruvius Pollio",
+                "answer": "Roman concrete",
                 "isCorrect": true
             },
             {
-                "answer": "Leon Battista Alberti",
+                "answer": "A construction system",
                 "isCorrect": false
             },
             {
-                "answer": "Fra Giovanni Giocondo",
+                "answer": "Roman ceramic",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["history", "general", "roman"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "Who commissioned the Pantheon of Rome?",
+        "answers": [
+            {
+                "answer": "Marcus Agrippa",
+                "isCorrect": true
+            },
+            {
+                "answer": "Caesar Augustus",
+                "isCorrect": false
+            },
+            {
+                "answer": "Hadrian",
+                "isCorrect": false
+            },
+            {
+                "answer": "Lucius Junius Brutus",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["history", "general", "roman"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "What order do the capitals of the Pantheon in Rome follow?",
+        "answers": [
+            {
+                "answer": "Doric",
+                "isCorrect": false
+            },
+            {
+                "answer": "Corinthian",
+                "isCorrect": true
+            },
+            {
+                "answer": "Athenian",
+                "isCorrect": false
+            },
+            {
+                "answer": "Ionic",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["history", "general", "roman"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "Which Greek architect and urban planner is considered 'the father of European urban planning'?",
+        "answers": [
+            {
+                "answer": "Hesychius of Miletus",
+                "isCorrect": false
+            },
+            {
+                "answer": "Aristotle",
+                "isCorrect": false
+            },
+            {
+                "answer": "Hippodamus of Miletus",
+                "isCorrect": true
+            },
+            {
+                "answer": "Theano of Crotone",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["history", "general", "greek"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "what was the main use of the Roman forum?",
+        "answers": [
+            {
+                "answer": "Marketplace",
+                "isCorrect": true
+            },
+            {
+                "answer": "Sports",
+                "isCorrect": false
+            },
+            {
+                "answer": "Education",
+                "isCorrect": false
+            },
+            {
+                "answer": "Religion",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["history", "general", "roman"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "Where is the ancient city of Petra located?",
+        "answers": [
+            {
+                "answer": "Iraq",
+                "isCorrect": false
+            },
+            {
+                "answer": "Syria",
+                "isCorrect": false
+            },
+            {
+                "answer": "Turkey",
+                "isCorrect": false
+            },
+            {
+                "answer": "Jordan",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["history", "general"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "What civilization built the ancient city of Petra?",
+        "answers": [
+            {
+                "answer": "Romans",
+                "isCorrect": false
+            },
+            {
+                "answer": "Nabataeans",
+                "isCorrect": true
+            },
+            {
+                "answer": "Greeks",
+                "isCorrect": false
+            },
+            {
+                "answer": "Sumerians",
                 "isCorrect": false
             }
         ],
         "tags": ["history", "general"],
-        "date": "2021-02-09"
+        "date": "2021-02-11"
+    },
+    {
+        "question": "What civilization invented the arch?",
+        "answers": [
+            {
+                "answer": "Romans",
+                "isCorrect": false
+            },
+            {
+                "answer": "Greeks",
+                "isCorrect": true
+            },
+            {
+                "answer": "Egyptians",
+                "isCorrect": false
+            },
+            {
+                "answer": "Sumerians",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["history", "general"],
+        "date": "2021-02-11"
+    },
+    {
+        "question": "What civilization invented the concrete?",
+        "answers": [
+            {
+                "answer": "Greeks",
+                "isCorrect": false
+            },
+            {
+                "answer": "Sumerians",
+                "isCorrect": false
+            },
+            {
+                "answer": "Romans",
+                "isCorrect": true
+            },
+            {
+                "answer": "Egyptians",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["history", "general"],
+        "date": "2021-02-11"
     }
 ]
