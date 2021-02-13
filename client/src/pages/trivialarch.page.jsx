@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext } from "react"
 import "./trivialarch.styles.css";
-import QuizzMode from "../components/quizz/quizzMode.component";
-import Rules from "../components/quizz/rules.component";
-import Question from "../components/quizz/question.component";
-import Score from "../components/quizz/score.component";
-import Ranking from "../components/quizz/ranking.component";
+import QuizMode from "../components/quiz/quizMode.component";
+import Rules from "../components/quiz/rules.component";
+import Question from "../components/quiz/question.component";
+import Score from "../components/quiz/score.component";
+import Ranking from "../components/quiz/ranking.component";
 
 
 // REDUX HOOKS
@@ -27,11 +27,11 @@ export default function TrivialArch() {
         const sortedReducedQuestions = [];
         const randomIndex = [];
 
-        if (state.quizzMode === "") {
+        if (state.quizMode === "") {
             dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: [] } })
         } else {
             for (let question of questions) {
-                if (question.tags.includes(state.quizzMode)) {
+                if (question.tags.includes(state.quizMode)) {
                     sortedQuestions.push(question)
                 }
             }
@@ -51,7 +51,7 @@ export default function TrivialArch() {
             dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: sortedReducedQuestions } })
         }
 
-    }, [state.quizzMode])
+    }, [state.quizMode])
 
     const handleCancel = e => {
         e.preventDefault();
@@ -63,20 +63,18 @@ export default function TrivialArch() {
     }
 
 
-    const quizzDisplay = () => {
+    const quizDisplay = () => {
 
         if (showRanking) {
             return <Ranking />
-        } else if (state.quizzMode === "") {
-            return <QuizzMode />
-        } else if (!state.isReady && state.quizzMode !== "") {
+        } else if (state.quizMode === "") {
+            return <QuizMode />
+        } else if (!state.isReady && state.quizMode !== "") {
             return <Rules />
-        } else if (state.isReady && state.quizzMode !== "" && !state.isFinished) {
+        } else if (state.isReady && state.quizMode !== "" && !state.isFinished) {
             return <Question />
         } else if (state.isFinished) {
             return <Score />
-        } else {
-            return ""
         }
 
     }
@@ -86,18 +84,17 @@ export default function TrivialArch() {
         <div className="trivialarch-main">
             <div className="trivialarch-container">
 
+                {quizDisplay()}
 
-                {quizzDisplay()}
-
-                {/* <QuizzMode /> */}
+                {/* <QuizMode /> */}
                 {/* <Rules /> */}
                 {/* <Question /> */}
                 {/* <Score /> */}
                 {/* <Ranking /> */}
 
 
-                {state.quizzMode !== "" && !state.isFinished && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
-                {state.quizzMode === "" && <button onClick={handleRanking} className="cancel-btn">{!showRanking ? "Ranking" : "Menu"}</button>}
+                {state.quizMode !== "" && !state.isFinished && <button onClick={handleCancel} className="cancel-btn">Restart</button>}
+                {state.quizMode === "" && <button onClick={handleRanking} className="cancel-btn">{!showRanking ? "Ranking" : "Menu"}</button>}
 
             </div>
         </div>

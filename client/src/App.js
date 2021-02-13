@@ -44,7 +44,7 @@ export default function App() {
         <Switch>
 
           <Route path="/icons/:architect" component={Icons} />
-          {/* <Route path="/icons" component={Icons} /> */}
+          <Route path="/icons" component={Icons} />
           <Route path="/trivialArch" component={TrivialArch} />
           <Route path="/contact" component={Contact} />
           <Route path="/*" component={Home} />

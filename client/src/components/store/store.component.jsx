@@ -7,10 +7,10 @@ import { Reducer } from "./reducer";
 
 
 const initialState = {
-    url: "http://localhost:5000/",
-    // url: "https://archicons-server.herokuapp.com/",
+    // url: "http://localhost:5000/",
+    url: "https://archicons-server.herokuapp.com/",
     username: "",
-    quizzMode: "",
+    quizMode: "",
     isReady: false,
     isFinished: false,
     questionsList: [],
@@ -18,7 +18,8 @@ const initialState = {
         total: 0,
         right: 0,
         wrong: 0
-    }
+    },
+    seconds: 30
 }
 
 

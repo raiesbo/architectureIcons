@@ -207,7 +207,7 @@
         "date": "2021-02-11"
     },
     {
-        "question": "in which city is the Parthenon located",
+        "question": "In which city is the Parthenon located?",
         "answers": [
             {
                 "answer": "Rome",
@@ -345,7 +345,7 @@
         "date": "2021-02-11"
     },
     {
-        "question": "what was the main use of the Roman forum?",
+        "question": "What was the main use of the Roman forum?",
         "answers": [
             {
                 "answer": "Marketplace",

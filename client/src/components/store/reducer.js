@@ -9,9 +9,9 @@ export const Reducer = (state, action) => {
         case ACTIONS.RESTORE_USERNAME:
             // console.log(action.payload)
             return { ...state, username: "" };
-        case ACTIONS.ADD_QUIZZMODE:
+        case ACTIONS.ADD_QUIZMODE:
             // console.log(action.payload)
-            return { ...state, quizzMode: action.payload.mode };
+            return { ...state, quizMode: action.payload.mode };
         case ACTIONS.TOGGLE_ISREADY:
             // console.log(action.payload)
             return { ...state, isReady: !state.isReady };
@@ -30,15 +30,21 @@ export const Reducer = (state, action) => {
                     wrong: state.answers.wrong + action.payload.wrong
                 }
             };
+        case ACTIONS.MINUS_SECONDS:
+            // console.log("MINUS_SECONDS", state)
+            return { ...state, seconds: state.seconds - 1 }
+        case ACTIONS.RESTART_SECONDS:
+            return { ...state, seconds: 30 }
         case ACTIONS.RESTORE_GAME:
             console.log("game restored")
             return {
                 ...state,
-                quizzMode: "",
+                quizMode: "",
                 isReady: false,
                 isFinished: false,
                 questionsList: [],
-                answers: { total: 0, right: 0, wrong: 0 }
+                answers: { total: 0, right: 0, wrong: 0 },
+                seconds: 30
             };
         default:
             return state;

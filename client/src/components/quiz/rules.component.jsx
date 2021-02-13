@@ -13,7 +13,7 @@ export default function Rules() {
 
             <div className="rules-list">
                 <ul>
-                    <li>The quizz consists on 20 questions.</li>
+                    <li>The quiz consists on 20 questions with 4 possible answers for each.</li>
                     <li>Each question will take no more than 30 seconds.</li>
                     <li>Whenever you are ready, click on the start button.</li>
                 </ul>

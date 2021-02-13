@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import "./quizzMode.styles.css"
+import "./quizMode.styles.css"
 import { ACTIONS } from "../store/actions";
 import { Context } from "../store/store.component";
 
 
-export default function QuizzMode() {
+export default function QuizMode() {
 
     const [state, dispatch] = useContext(Context);
 
@@ -29,7 +29,7 @@ export default function QuizzMode() {
     ]
 
     return (
-        <div className="quizzMode-container">
+        <div className="quizMode-container">
 
             {
                 modes.map((item, id) => {
@@ -39,7 +39,7 @@ export default function QuizzMode() {
                             key={id}
                             className="mode"
                             style={{ backgroundImage: `url("${modeImage}")` }}
-                            onClick={() => dispatch({ type: ACTIONS.ADD_QUIZZMODE, payload: { mode: item.mode } })}
+                            onClick={() => dispatch({ type: ACTIONS.ADD_QUIZMODE, payload: { mode: item.mode } })}
                         >
                             <h2>{item.title}</h2>
                         </div>

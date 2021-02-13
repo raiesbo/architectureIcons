@@ -1,6 +1,6 @@
 .score-container {
 
-    width: 600px;
+    /* width: 600px; */
     /* height: 300px; */
     border-radius: 8px;
     border: 3px solid white;
@@ -11,8 +11,9 @@
     justify-content: space-around;
     padding: 15px;
     background-color: white;
-}
 
+    text-align: center;
+}
 
 
 .score-container button{
@@ -39,7 +40,7 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-
+    text-align: center;
 }
 
 .username-form p {
