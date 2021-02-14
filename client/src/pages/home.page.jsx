@@ -12,19 +12,20 @@ export default function Home() {
     // let timeout;
 
     const quoteshandler = () => {
+        
         // CHANGING QUOTES BASED ON RANDOM NUMBERS
         let randomNum = Math.floor(Math.random() * quotes.length)
         while (quotes.indexOf(quote) === randomNum) {
             console.log("jumped num: ", randomNum)
             randomNum = Math.floor(Math.random() * quotes.length)
         }
-        // console.log(randomNum)
+        console.log(randomNum)
         setQuote(quotes[randomNum])
     }
 
     const clickHandler = () => {
         // CLICK HANDLEING WITH FADING ANIMATION
-        setTimer(clearTimeout(timer))
+        // setTimer(clearInterval(timer))
 
         setAnimOn(true)
         setTimeout(quoteshandler, 350)
@@ -32,8 +33,8 @@ export default function Home() {
     }
 
     const settingTimer = () => {
-        let timeout = setTimeout(clickHandler, 8000)
-        setTimer(timeout);
+        let timeout = setInterval(clickHandler, 8000)
+        return setTimer(timeout);
     }
 
     // componentDidMount Hook

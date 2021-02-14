@@ -14,9 +14,6 @@ export default function Contact() {
 
     const [isSending, setIsSending] = useState(false);
 
-    // useEffect(() => {
-    //     menuStrongHandler("Icons")
-    // }, [])
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -92,9 +89,7 @@ export default function Contact() {
             <div className="contact-container">
 
                 {/* <h4>Contact</h4>
-
                 <div className="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
-
                 <h5>Coming soon</h5> */}
 
                 <h2 className="contact-title">Contact us!</h2>
@@ -103,9 +98,6 @@ export default function Contact() {
 
 
                 {isSending ? <div> <i class="fas fa-spinner fa-3x"></i> <p>Sending</p> </div> : formDisplay()}
-
-                {/* <i class="fas fa-spinner fa-3x"></i> */}
-                {/* <div><p>Sending...</p><i class="fas fa-spinner fa-3x"></i> </div> */}
 
             </div>
         </div>
