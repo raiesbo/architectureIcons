@@ -1,23 +1,87 @@
 :root {
-    --dots-color: rgb(218, 218, 218);
+  --dots-color: rgb(218, 218, 218);
 }
 
 .contact-main {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .contact-container {
-    margin: auto 20px auto 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  margin: auto 20px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 700px;
+  padding: 15px;
+
+  background-color: var(--bg-color-alt);
+  border-radius: 8px;
+
+  text-align: center;
 }
+
+.contact-title {
+
+}
+
+.contact-description {
+	margin: 15px 0 10px 0;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: start;
+}
+
+.contact-container label {
+	margin: 5px 0;
+}
+
+.contact-container input {
+	margin: 5px 0;
+    padding: 6px;
+    width: 100%;
+    border: 1px solid var(--text-color-main);
+    border-radius: 4px;
+    background-color: var(--bg-color-main);
+}
+
+.contact-container textarea {
+	margin: 5px 0;
+    padding: 6px;
+    width: 100%;
+    border: 1px solid var(--text-color-main);
+    border-radius: 4px;
+    background-color: var(--bg-color-main);
+}
+
+.contact-container button {
+	width: 100%;
+    margin: 30px 0 0 0;
+    padding: 6px;
+    border-radius: 4px;
+    border: 2px solid white;
+    transition: ease 150ms;
+    cursor: pointer;
+    font-family: var(--font-title);
+    color: var(--text-color-main);
+    font-weight: 700;
+}
+
+.contact-container button:hover{
+    background-color: white;
+}
+
+
+
+
 
 
 
@@ -27,79 +91,90 @@
 /*////ANIMATION/////*/
 
 .lds-grid {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    z-index: -1;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  z-index: -1;
+}
+
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  background-color: var(--dots-color);
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+  background-color: var(--dots-color);
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+  background-color: var(--dots-color);
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(4) {
+  background-color: var(--dots-color);
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(5) {
+  background-color: var(--dots-color);
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(6) {
+  background-color: var(--dots-color);
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(7) {
+  background-color: var(--dots-color);
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+
+.lds-grid div:nth-child(8) {
+  background-color: var(--dots-color);
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+
+.lds-grid div:nth-child(9) {
+  background-color: var(--dots-color);
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
   }
-  .lds-grid div {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #fff;
-    animation: lds-grid 1.2s linear infinite;
+  50% {
+    opacity: 0.5;
   }
-  .lds-grid div:nth-child(1) {
-    background-color: var(--dots-color);
-    top: 8px;
-    left: 8px;
-    animation-delay: 0s;
-  }
-  .lds-grid div:nth-child(2) {
-    background-color: var(--dots-color);
-    top: 8px;
-    left: 32px;
-    animation-delay: -0.4s;
-  }
-  .lds-grid div:nth-child(3) {
-    background-color: var(--dots-color);
-    top: 8px;
-    left: 56px;
-    animation-delay: -0.8s;
-  }
-  .lds-grid div:nth-child(4) {
-    background-color: var(--dots-color);
-    top: 32px;
-    left: 8px;
-    animation-delay: -0.4s;
-  }
-  .lds-grid div:nth-child(5) {
-    background-color: var(--dots-color);
-    top: 32px;
-    left: 32px;
-    animation-delay: -0.8s;
-  }
-  .lds-grid div:nth-child(6) {
-    background-color: var(--dots-color);
-    top: 32px;
-    left: 56px;
-    animation-delay: -1.2s;
-  }
-  .lds-grid div:nth-child(7) {
-    background-color: var(--dots-color);
-    top: 56px;
-    left: 8px;
-    animation-delay: -0.8s;
-  }
-  .lds-grid div:nth-child(8) {
-    background-color: var(--dots-color);
-    top: 56px;
-    left: 32px;
-    animation-delay: -1.2s;
-  }
-  .lds-grid div:nth-child(9) {
-    background-color: var(--dots-color);
-    top: 56px;
-    left: 56px;
-    animation-delay: -1.6s;
-  }
-  @keyframes lds-grid {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-    }
-  }
+}

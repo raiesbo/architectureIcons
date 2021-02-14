@@ -459,4 +459,273 @@
         "tags": ["history", "general"],
         "date": "2021-02-11"
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ,
+    {
+        "question": "What year was le corbusier born?",
+        "answers": [
+            {
+                "answer": "1896",
+                "isCorrect": false
+            },
+            {
+                "answer": "1887",
+                "isCorrect": true
+            },
+            {
+                "answer": "1886",
+                "isCorrect": false
+            },
+            {
+                "answer": "1965",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "Where is the famous work of le Corbusier the 'Villa Savoye'?",
+        "answers": [
+            {
+                "answer": "Marseille",
+                "isCorrect": false
+            },
+            {
+                "answer": "Léon",
+                "isCorrect": false
+            },
+            {
+                "answer": "Paris",
+                "isCorrect": false
+            },
+            {
+                "answer": "Poissy",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "When did the construction of the 'Villa Savoye' begin?",
+        "answers": [
+            {
+                "answer": "1934",
+                "isCorrect": false
+            },
+            {
+                "answer": "1929",
+                "isCorrect": true
+            },
+            {
+                "answer": "1931",
+                "isCorrect": false
+            },
+            {
+                "answer": "1920",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "Which is not one of the 'Le Corbusier's Five Points of Architecture'?",
+        "answers": [
+            {
+                "answer": "Pilotis",
+                "isCorrect": false
+            },
+            {
+                "answer": "The vertical window",
+                "isCorrect": true
+            },
+            {
+                "answer": "The free designing of the ground plan",
+                "isCorrect": false
+            },
+            {
+                "answer": "Roof gardens on a flat roof",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "Where is the first 'Unité d'habitation' located?",
+        "answers": [
+            {
+                "answer": "Marseille",
+                "isCorrect": true
+            },
+            {
+                "answer": "Briey",
+                "isCorrect": false
+            },
+            {
+                "answer": "Nantes",
+                "isCorrect": false
+            },
+            {
+                "answer": "Berlin",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "What is Le Corbusier's Modulor?",
+        "answers": [
+            {
+                "answer": "Standard model of the human to determine dimensions",
+                "isCorrect": true
+            },
+            {
+                "answer": "New unit of measure",
+                "isCorrect": false
+            },
+            {
+                "answer": "System for dimensioning structures",
+                "isCorrect": false
+            },
+            {
+                "answer": "Element of ornamentation",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "When was the 'Notre-Dame du Haut' built?",
+        "answers": [
+            {
+                "answer": "1960",
+                "isCorrect": false
+            },
+            {
+                "answer": "1953",
+                "isCorrect": false
+            },
+            {
+                "answer": "1949",
+                "isCorrect": false
+            },
+            {
+                "answer": "1955",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "What project was not designed by le Corbusier?",
+        "answers": [
+            {
+                "answer": "Villa Rotonda",
+                "isCorrect": true
+            },
+            {
+                "answer": "Villa Shodhan",
+                "isCorrect": false
+            },
+            {
+                "answer": "Palace of the Soviets",
+                "isCorrect": false
+            },
+            {
+                "answer": "Heidi Weber Museum",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "Which one was Le Corbusier's first project?",
+        "answers": [
+            {
+                "answer": "Villa La Roche",
+                "isCorrect": false
+            },
+            {
+                "answer": "Villa Le Lac",
+                "isCorrect": false
+            },
+            {
+                "answer": "Villa Schwob",
+                "isCorrect": false
+            },
+            {
+                "answer": "Villa Fallet",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    },
+    {
+        "question": "What was the last le Corbusier project to be built?",
+        "answers": [
+            {
+                "answer": "Firminy-Vert Stadium",
+                "isCorrect": false
+            },
+            {
+                "answer": "Church of Saint-Pierre",
+                "isCorrect": true
+            },
+            {
+                "answer": "Sainte Marie de La Tourette",
+                "isCorrect": false
+            },
+            {
+                "answer": "Heidi Weber Museum",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "lecorbusier"],
+        "date": "2021-02-14"
+    }
 ]

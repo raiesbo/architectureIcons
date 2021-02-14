@@ -7,8 +7,9 @@ export default function Home() {
 
     const [quote, setQuote] = useState({});
     const [animOn, setAnimOn] = useState(false);
+    const [timer, setTimer] = useState("");
 
-    let timeout;
+    // let timeout;
 
     const quoteshandler = () => {
         // CHANGING QUOTES BASED ON RANDOM NUMBERS
@@ -17,24 +18,30 @@ export default function Home() {
             console.log("jumped num: ", randomNum)
             randomNum = Math.floor(Math.random() * quotes.length)
         }
-        console.log(randomNum)
+        // console.log(randomNum)
         setQuote(quotes[randomNum])
     }
 
     const clickHandler = () => {
         // CLICK HANDLEING WITH FADING ANIMATION
-        // clearInterval(timeout)
+        setTimer(clearTimeout(timer))
+
         setAnimOn(true)
         setTimeout(quoteshandler, 350)
         setTimeout(() => setAnimOn(false), 400)
     }
 
-    // timeout = setTimeout(clickHandler, 5000)
+    const settingTimer = () => {
+        let timeout = setTimeout(clickHandler, 8000)
+        setTimer(timeout);
+    }
 
+    // componentDidMount Hook
     useEffect(() => {
         quoteshandler()
-        timeout = setInterval(clickHandler, 10000)
+        settingTimer()
     }, [])
+
 
 
     return (

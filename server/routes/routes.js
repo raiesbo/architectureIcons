@@ -6,4 +6,6 @@ const router = Router();
 router.get("/champion", champion_get);
 router.post("/champion", champion_post);
 
+router.post("/question", () => {});
+
 module.exports = router;
