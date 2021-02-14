@@ -18,19 +18,15 @@
   flex-direction: column;
   max-width: 700px;
   padding: 15px;
-
   background-color: var(--bg-color-alt);
   border-radius: 8px;
-
   text-align: center;
 }
 
-.contact-title {
-
-}
+.contact-title {}
 
 .contact-description {
-	margin: 15px 0 10px 0;
+  margin: 15px 0 10px 0;
 }
 
 .contact-container form {
@@ -41,52 +37,90 @@
 }
 
 .contact-container label {
-	margin: 5px 0;
+  margin: 5px 0;
 }
 
 .contact-container input {
-	margin: 5px 0;
-    padding: 6px;
-    width: 100%;
-    border: 1px solid var(--text-color-main);
-    border-radius: 4px;
-    background-color: var(--bg-color-main);
+  margin: 5px 0;
+  padding: 6px;
+  width: 100%;
+  border: 1px solid var(--text-color-main);
+  border-radius: 4px;
+  background-color: var(--bg-color-main);
 }
 
 .contact-container textarea {
-	margin: 5px 0;
-    padding: 6px;
-    width: 100%;
-    border: 1px solid var(--text-color-main);
-    border-radius: 4px;
-    background-color: var(--bg-color-main);
+  margin: 5px 0;
+  padding: 6px;
+  width: 100%;
+  border: 1px solid var(--text-color-main);
+  border-radius: 4px;
+  background-color: var(--bg-color-main);
 }
 
 .contact-container button {
-	width: 100%;
-    margin: 30px 0 0 0;
-    padding: 6px;
-    border-radius: 4px;
-    border: 2px solid white;
-    transition: ease 150ms;
-    cursor: pointer;
-    font-family: var(--font-title);
-    color: var(--text-color-main);
-    font-weight: 700;
+  width: 100%;
+  margin: 30px 0 0 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 2px solid white;
+  transition: ease 150ms;
+  cursor: pointer;
+  font-family: var(--font-title);
+  color: var(--text-color-main);
+  font-weight: 700;
 }
 
-.contact-container button:hover{
-    background-color: white;
+.contact-container button:hover {
+  background-color: white;
 }
 
+.contact-container i {
+  margin-top: 15px;
+  animation: sending 2000ms infinite linear;
+}
 
-
-
-
-
-
-
-
+@keyframes sending {
+  0% {
+    transform: rotate(0deg);
+  }
+  /* 8.3% {
+    transform: rotate(30deg);
+  }
+  16.6% {
+    transform: rotate(60deg);
+  }
+  24.9% {
+    transform: rotate(90deg);
+  }
+  33.2% {
+    transform: rotate(120deg);
+  }
+  41.6% {
+    transform: rotate(150deg);
+  }
+  49.8% {
+    transform: rotate(180deg);
+  }
+  58.1% {
+    transform: rotate(210deg);
+  }
+  66.4% {
+    transform: rotate(240deg);
+  }
+  74.7% {
+    transform: rotate(270deg);
+  }
+  83% {
+    transform: rotate(300deg);
+  }
+  91.3% {
+    transform: rotate(330deg);
+  } */
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /*////ANIMATION/////*/
 
