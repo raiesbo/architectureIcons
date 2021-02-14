@@ -1,8 +1,11 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react";
+import { Context } from "../components/store/store.component";
 import "./contact.styles.css";
 
 
 export default function Contact() {
+
+    const [state, distpacth] = useContext(Context);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -13,9 +16,31 @@ export default function Contact() {
     //     menuStrongHandler("Icons")
     // }, [])
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(name, email, topic, description)
+        // console.log(name, email, topic, description)
+
+        // server request/email
+        try {
+            const res = await fetch(`${state.url}email`, {
+                method: "POST",
+                body: JSON.stringify({
+                    name,
+                    email,
+                    topic,
+                    description
+                }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+
+            const data = await res.json();
+            // console.log(data)
+        }
+        catch (e) {
+            console.log(e)
+        }
 
         setName("")
         setEmail("")
@@ -50,7 +75,7 @@ export default function Contact() {
                     <label htmlFor="topic">Topic:</label>
                     <input type="text" id="topic" required maxLength="20" autoComplete="off" value={topic} onChange={e => setTopic(e.target.value)} />
 
-                    <label htmlFor="description">Description:</label>
+                    <label htmlFor="description">Your thoughts:</label>
                     <textarea
                         id="description"
                         required="true"
