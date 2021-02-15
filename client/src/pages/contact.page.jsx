@@ -59,7 +59,7 @@ export default function Contact() {
             <form onSubmit={handleSubmit}>
 
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" required maxLength="12" autoComplete="off" value={name} onChange={e => setName(e.target.value)} />
+                <input type="text" id="name" required maxLength="20" autoComplete="off" value={name} onChange={e => setName(e.target.value)} />
 
                 <label htmlFor="email">Email:</label>
                 <input type="text" id="email" required maxLength="20" autoComplete="off" value={email} onChange={e => setEmail(e.target.value)} />

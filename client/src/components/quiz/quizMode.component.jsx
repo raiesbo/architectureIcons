@@ -19,7 +19,7 @@ export default function QuizMode() {
         {
             title: "Modernism",
             img: "modernism_v3.jpg",
-            mode: "general"
+            mode: "modernism"
         },
         {
             title: "General",

@@ -19,7 +19,7 @@ export default function Home() {
             console.log("jumped num: ", randomNum)
             randomNum = Math.floor(Math.random() * quotes.length)
         }
-        console.log(randomNum)
+        // console.log(randomNum)
         setQuote(quotes[randomNum])
     }
 

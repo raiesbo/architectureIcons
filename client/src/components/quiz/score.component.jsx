@@ -47,7 +47,7 @@ export default function Score() {
             <h4>you completed the challenge with a score of: <span>{state.answers.right * 4}</span> points!</h4>
             <div className="username-form">
                 <label htmlFor="username">Username:</label>
-                <input id="username" type="text" value={name} onChange={e => setName(e.target.value)} maxlength="12" autoComplete="off" />
+                <input id="username" type="text" value={name} onChange={e => setName(e.target.value)} maxLength="15" autoComplete="off" />
                 <p>If you want to be immortalized in the ranking, enter a username and brag to your friends!</p>
             </div>
 

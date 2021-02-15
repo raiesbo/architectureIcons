@@ -727,5 +727,235 @@
         ],
         "tags": ["modernism", "general", "lecorbusier"],
         "date": "2021-02-14"
+    },
+    {
+        "question": "What year was Ludwig Mies van der Rohe born?",
+        "answers": [
+            {
+                "answer": "1913",
+                "isCorrect": false
+            },
+            {
+                "answer": "1892",
+                "isCorrect": false
+            },
+            {
+                "answer": "1886",
+                "isCorrect": true
+            },
+            {
+                "answer": "1944",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "What piece of furniture was designed by Ludwig Mies van der Rohe?",
+        "answers": [
+            {
+                "answer": "LC3",
+                "isCorrect": false
+            },
+            {
+                "answer": "Brno chair",
+                "isCorrect": true
+            },
+            {
+                "answer": "Tulip Arm Chair",
+                "isCorrect": false
+            },
+            {
+                "answer": "Cité Chair",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "When was the Farnsworth House built?",
+        "answers": [
+            {
+                "answer": "1945",
+                "isCorrect": true
+            },
+            {
+                "answer": "1951",
+                "isCorrect": false
+            },
+            {
+                "answer": "1947",
+                "isCorrect": false
+            },
+            {
+                "answer": "1950",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "What project was not designed by Mies van der Rohe?",
+        "answers": [
+            {
+                "answer": "Lafayette park",
+                "isCorrect": false
+            },
+            {
+                "answer": "Seagram Building",
+                "isCorrect": false
+            },
+            {
+                "answer": "Farnsworth House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Robie House",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "What are the main materials used in the Farnsworth House?",
+        "answers": [
+            {
+                "answer": "Concrete and glass",
+                "isCorrect": false
+            },
+            {
+                "answer": "Steel and glass",
+                "isCorrect": true
+            },
+            {
+                "answer": "Brick and Concrete",
+                "isCorrect": false
+            },
+            {
+                "answer": "Concrete and Steel",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "What project was designed by Mies van der Rohe?",
+        "answers": [
+            {
+                "answer": "Kaufmann House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Stahl House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Seagram Building",
+                "isCorrect": true
+            },
+            {
+                "answer": "Fallingwater house",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "What is Mies van der Rohe most famous project in Berlin?",
+        "answers": [
+            {
+                "answer": "Neue Nationalgalerie",
+                "isCorrect": true
+            },
+            {
+                "answer": " Villa Wolf",
+                "isCorrect": false
+            },
+            {
+                "answer": "Villa Tugendhat",
+                "isCorrect": false
+            },
+            {
+                "answer": " Haus Lange",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "Where did Mies van der Rohe educate until his departure to the United States?",
+        "answers": [
+            {
+                "answer": "Illinois Institute of Technology",
+                "isCorrect": false
+            },
+            {
+                "answer": "RWTH Aachen",
+                "isCorrect": false
+            },
+            {
+                "answer": "Technische Universität Berlin",
+                "isCorrect": false
+            },
+            {
+                "answer": "Bauhaus",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "When was the Barcelona pavilion by Mies constructed?",
+        "answers": [
+            {
+                "answer": "1931",
+                "isCorrect": false
+            },
+            {
+                "answer": "1929",
+                "isCorrect": true
+            },
+            {
+                "answer": "1928",
+                "isCorrect": false
+            },
+            {
+                "answer": "1933",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
+    },
+    {
+        "question": "What are the main materials used in the Barcelona pavilion",
+        "answers": [
+            {
+                "answer": "Travertine, concrete, marble",
+                "isCorrect": false
+            },
+            {
+                "answer": "Concrete, marble, glass",
+                "isCorrect": false
+            },
+            {
+                "answer": "Concrete, glass, steel",
+                "isCorrect": false
+            },
+            {
+                "answer": "Marble, red onyx and travertine",
+                "isCorrect": true
+            }
+        ],
+        "tags": ["modernism", "general", "mies"],
+        "date": "2021-02-15"
     }
 ]

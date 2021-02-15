@@ -11,16 +11,44 @@ export default function Question() {
     const [state, dispatch] = useContext(Context);
 
     const [questionsAnswer, setQuestionsAnswer] = useState(false);
+    const [answersIndex, setAnswersIndex] = useState("");
     const [counter, setCounter] = useState("");
-    const [randomIndexes, setRandomIndexes] = useState([]);
+    // const [randomIndexes, setRandomIndexes] = useState([]);
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e && e.preventDefault();
         let right = 0;
         let wrong = 0;
         questionsAnswer ? right++ : wrong++
         dispatch({ type: ACTIONS.ADD_ANSWER, payload: { right, wrong } })
+
+
+        // handle server post
+        if (answersIndex !== "") {
+            try {
+                const res = await fetch(`${state.url}question`, {
+                    method: "POST",
+                    body: JSON.stringify({
+                        quest: state.questionsList[state.answers.total],
+                        answersIndex,
+                    }),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                })
+
+                // const data = await res.json()
+                // console.log(data)
+            }
+            catch (e) {
+                console.log(e)
+            }
+        }
+
+
+        // reset/next question
         setQuestionsAnswer(false)
+        setAnswersIndex("")
         setCounter(clearTimeout(counter))
         dispatch({ type: ACTIONS.RESTART_SECONDS })
         if (state.answers.total === state.questionsList.length - 1) {
@@ -58,7 +86,10 @@ export default function Question() {
                                             name="answer"
                                             id={"answer" + i + 1}
                                             className={"input" + i + 1}
-                                            onChange={() => setQuestionsAnswer(item.isCorrect)}
+                                            onChange={() => {
+                                                setAnswersIndex(i)
+                                                setQuestionsAnswer(item.isCorrect)
+                                            }}
                                         />
                                         <label htmlFor={"answer" + i + 1} className={"answer" + i + 1} >{item.answer}</label>
                                     </>
