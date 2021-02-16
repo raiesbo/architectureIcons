@@ -47,7 +47,7 @@ export default function TrivialArch() {
                 sortedReducedQuestions.push(sortedQuestions[index - 1])
             }
 
-            console.log("sorted questions: ", sortedReducedQuestions)
+            // console.log("sorted questions: ", sortedReducedQuestions)
             dispatch({ type: ACTIONS.ADD_QUESTIONS, payload: { questions: sortedReducedQuestions } })
         }
 

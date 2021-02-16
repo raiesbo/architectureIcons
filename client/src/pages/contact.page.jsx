@@ -72,7 +72,7 @@ export default function Contact() {
                     id="description"
                     required="true"
                     autoComplete="off"
-                    placeholder="Enter your ideas here..."
+                    placeholder="Enter here your ideas..."
                     value={description}
                     onChange={e => setDescription(e.target.value)}
                 ></textarea>

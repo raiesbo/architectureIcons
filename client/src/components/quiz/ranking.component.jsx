@@ -49,7 +49,9 @@ export default function Ranking() {
                 }
             </table>
 
+            {!ranking ? <i class="fas fa-spinner fa-3x"></i> : undefined}
+
         </div>
-        
+
     )
 }

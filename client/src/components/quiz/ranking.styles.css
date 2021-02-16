@@ -4,7 +4,6 @@
     border-radius: 8px;
     width: 20rem;
     padding: 15px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,4 +25,20 @@
 
 .ranking-container th {
     color: var(--text-color-alt);
+}
+
+
+
+.ranking-container i {
+    margin: 20px 0 15px 0;
+    animation: sending 2000ms infinite linear;
+}
+
+@keyframes sending {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

@@ -957,5 +957,74 @@
         ],
         "tags": ["modernism", "general", "mies"],
         "date": "2021-02-15"
+    },
+    {
+        "question": "When was architect Frank Lloyd Wright born?",
+        "answers": [
+            {
+                "answer": "1867",
+                "isCorrect": true
+            },
+            {
+                "answer": "1959",
+                "isCorrect": false
+            },
+            {
+                "answer": "1987",
+                "isCorrect": false
+            },
+            {
+                "answer": "1857",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "wright"],
+        "date": "2021-02-16"
+    },
+    {
+        "question": "What project was not done by Frank Lloyd Wright?",
+        "answers": [
+            {
+                "answer": "Farnsworth House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Millard House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Ennis House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Robie House",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "wright"],
+        "date": "2021-02-16"
+    },
+    {
+        "question": "What project is considered Wright's greatest masterpiece both for its dynamism and for its integration with its striking natural surroundings?",
+        "answers": [
+            {
+                "answer": "Robie House",
+                "isCorrect": false
+            },
+            {
+                "answer": "Taliesin",
+                "isCorrect": false
+            },
+            {
+                "answer": "Fallingwater",
+                "isCorrect": true
+            },
+            {
+                "answer": "Solomon R. Guggenheim Museum",
+                "isCorrect": false
+            }
+        ],
+        "tags": ["modernism", "general", "wright"],
+        "date": "2021-02-16"
     }
 ]
